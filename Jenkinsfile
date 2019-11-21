@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Maven Build') {
       steps {
-          sh ‘mvn -Dmaven.test.failure.ignore=true install package’
+          sh ‘mvn -B -DskipTests clean package’
                 }
     } 
     stage('Publish artifact') {
