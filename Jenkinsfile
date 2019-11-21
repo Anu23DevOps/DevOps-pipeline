@@ -5,7 +5,7 @@ pipeline {
              jdk ‘jdk8’
              }
   stages {
-    stage(Maven Build') {
+    stage('Maven Build') {
       steps {
                  sh ‘mvn clean install’
                 }
