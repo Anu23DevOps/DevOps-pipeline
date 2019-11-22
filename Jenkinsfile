@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Maven Build') {
       steps {
-          sh ‘mvn clean install’
+          sh ‘mvn package’
                 }
     } 
     stage('Publish artifact') {
