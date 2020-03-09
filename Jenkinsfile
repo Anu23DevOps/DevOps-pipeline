@@ -5,7 +5,7 @@ pipeline {
              jdk "jdk"
              }
   stages {
-    stage('Maven Build') {
+    stage('Maven_Build') {
       steps {
           sh "mvn package"
                 }
